@@ -24,7 +24,7 @@
           <li><a href="#">FAQs</a></li>
           <li><a href="#">Pricing</a></li>
           <li class="divider"></li>
-          <li><%= link_to "Sign up", signup_path%></a></li>
+          <li><a href="new_user_registration">Sign up</a></li>
           <li class="divider"></li>
           <li><a href="#">One more separated link</a></li>
         </ul>
@@ -58,9 +58,10 @@
 	<body bgcolor=#333333>
 		<div class="jumbotron">
 			<div class="container">
-        <h1><font-family='Allan'>Welcome to Spendworthy!</font></h1>
+        <h1>Welcome to Spendworthy!</h1>
 				<p>It's time to decide whether that expense is worth your money. Is it <i>spendworthy</i>?</p>
-				<p><a href="signup" class="btn btn-primary btn-lg" role="button">Sign Up</a></p>
+				<p><%= link_to "Sign Up Now!", new_user_registration_path, class:"btn btn-primary btn-lg", role:"button"%>
+        </p>
 			</div>
 		</div>
 		<div id="footer">
